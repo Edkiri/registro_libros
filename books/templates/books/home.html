@@ -1,0 +1,20 @@
+{%extends "books/base.html"%}
+{% block title %}{% endblock %}
+{%load staticfiles%}
+{% block css %}
+  <link href="{% static "styles.css" %}" rel="stylesheet">
+{% endblock css%}
+{%block content%}
+
+
+	<div class="container">
+
+		{% for book in books%}
+			<div class="box">
+				<h3 class="image-title">{{book.title}}</h3>
+				<img src="/media/images/{{book.cover_url}}" width="250px">
+			</div>
+		{% endfor%}
+	</div>
+
+{%endblock%}

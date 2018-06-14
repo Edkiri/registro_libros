@@ -1,0 +1,38 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>{% block title|default:"lecturas" %}{% endblock %}</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		{%block css%}{%endblock%}
+	</head>
+
+	<body>
+		<header class="header">
+			<h1><a href="/">Lecturas</a></h1>
+			<nav class="menu">
+				<ul>
+					<li>
+						<a class="pipes" href="/todos">Todos</a>
+					</li>					
+					<li>
+						<a class="pipes" href="/sagas">Sagas</a>
+					</li>					
+					<li>
+						<a href="/genders">Géneros</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="sub-header">
+			<h2>{%block sub-title%}Favoritos{%endblock%}</h2>
+		</section>
+		{%block content%}{%endblock%}
+		<footer class="footer">
+			<p>Aquí no hay na</p>
+		</footer>
+		{%block js%}{%endblock%}
+	</body>
+
+</html>

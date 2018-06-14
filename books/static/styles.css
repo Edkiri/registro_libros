@@ -1,0 +1,119 @@
+
+
+
+
+/*header, sub-header, footer*/
+
+
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.header {
+	background-color: #24D3B4;
+	background-size: 100%;
+	padding: 20px;
+}
+
+.header h1 {
+	margin: 0;
+	display: inline-block;
+}
+.header h1 a {
+	color: white;
+	text-decoration: none;
+}
+
+.sub-header {
+	background-color: #3AB196;
+}
+
+.sub-header h2 {
+	margin: 0;
+	padding: 15px;
+	color: white;
+    position: relative;
+    left: 10px;
+}
+
+.menu {
+	display: inline-block;
+	position: relative;
+    left: 700px;
+}
+
+.menu ul {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.menu li {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.pipes:after {
+	content: " |";
+	color:white;
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.footer {
+	background-color: #24D3B4;
+}
+
+.footer p {
+	text-align: center;
+	padding: 25px;
+	color: white;
+	margin-bottom: 0;
+}
+
+
+
+/*Estilos de la renderización de las cajas del home*/
+
+
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.box {
+	margin: 10px;
+}
+
+.box h3 {
+	width: 248px;
+	text-align: center;
+	border: solid 1px black;
+	border-radius: 7px;
+	margin-bottom: 5px;
+}
+
+
+
+/*Estilos de sagas y géneros*/
+
+.container-groups {
+	text-align: center;
+}
+
+.estilos-a {
+	text-decoration: none;
+	color: black;
+} 
+
+
+
+

@@ -1,0 +1,23 @@
+{%extends "books/base.html"%}
+{% block title %}{% endblock %}
+{%load staticfiles%}
+{% block css %}
+  <link href="{% static "styles.css" %}" rel="stylesheet">
+{% endblock css%}
+{% block sub-title%}Genders{% endblock%}
+{%block content%}
+
+	<div class="container-groups">
+		{% for gender in genders %}
+
+		<div style="display: inline-block;">
+			<h4>
+				<a href="{% url 'detail-gender' gender.slug %}" class="estilos-a">
+					{{gender.name}}
+				</a>
+			</h4>
+		</div><br>
+		{% endfor%}
+	</div>
+
+{%endblock%}
